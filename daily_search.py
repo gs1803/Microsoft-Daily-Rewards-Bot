@@ -15,11 +15,11 @@ response = requests.get(word_site)
 words = response.text.splitlines()
 
 for i in range(35):
-    f = open('C:/Users/guhan/OneDrive/Documents/Python Scripts/bingSearch/usedKeywords.txt', 'r')
+    f = open('Path to textfile for used words', 'r')
     used = f.read().splitlines()
     new = Diff(words, used)
     search = random.choice(new)
-    f = open('C:/Users/guhan/OneDrive/Documents/Python Scripts/bingSearch/usedKeywords.txt', 'a')
+    f = open('Path to textfile for used words', 'a')
     f.write(search + "\n")
     f.close()
     webbrowser.open_new_tab(url)
