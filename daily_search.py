@@ -14,7 +14,9 @@ word_site = "https://www.mit.edu/~ecprice/wordlist.10000"
 response = requests.get(word_site)
 words = response.text.splitlines()
 
-for i in range(35):
+numOfSearches = int(input("Enter number of searches: "))
+
+for i in range(numOfSearches):
     f = open('Path to textfile for usedKeywords.txt', 'r')
     used = f.read().splitlines()
     new = Diff(words, used)
