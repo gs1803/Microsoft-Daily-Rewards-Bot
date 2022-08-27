@@ -16,7 +16,7 @@ words = response.text.splitlines()
 
 numOfSearches = int(input("Enter number of searches: "))
 
-for i in range(numOfSearches):
+for i in range(numOfSearches + 1):
     f = open('Path to textfile for usedKeywords.txt', 'r')
     used = f.read().splitlines()
     new = Diff(words, used)
