@@ -1,4 +1,4 @@
-# MSEdge-Daily-Rewards-Bot
+# Microsoft-Daily-Rewards-Bot
 ## Created by gs1803
 ### Python Version: 3.9.5
 When running the programming, enter the number of searches in the terminal, and it will pull up Bing and do entered number of searches to satisfy the daily search requirement for points. 
